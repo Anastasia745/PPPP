@@ -88,6 +88,7 @@ void main()
 		break;
 	}
 
+	//Приведение матриц к требуемому размеру
 	int size = 2;
 	while (size < row_1 || size < row_2 || size < column_1 || size < column_2)
 		size *= 2;
@@ -117,6 +118,7 @@ void main()
 	cout << "\nМатрица 2\n\n";
 	outputMatr(size, size, M2);
 
+	//Разбиение матриц на подматрицы и их заполнение
 	int** mat1 = memory(size / 2, size / 2);
 	int** mat2 = memory(size / 2, size / 2);
 	int** mat3 = memory(size / 2, size / 2);
@@ -125,7 +127,6 @@ void main()
 	int** mat6 = memory(size / 2, size / 2);
 	int** mat7 = memory(size / 2, size / 2);
 	int** mat8 = memory(size / 2, size / 2);
-
 	for (int i = 0; i < size / 2; i++)
 	{
 		for (int j = 0; j < size / 2; j++)
@@ -141,6 +142,7 @@ void main()
 		}
 	}
 
+	//Создание промежуточных матриц
 	int** inter_matr1 = memory(size / 2, size / 2);
 	int** inter_matr2 = memory(size / 2, size / 2);
 	int** inter_matr3 = memory(size / 2, size / 2);
@@ -149,7 +151,6 @@ void main()
 	int** inter_matr6 = memory(size / 2, size / 2);
 	int** inter_matr7 = memory(size / 2, size / 2);
 	int** inter_matr8 = memory(size / 2, size / 2);
-
 	for (int i = 0; i < size / 2; i++)
 	{
 		for (int j = 0; j < size / 2; j++)
@@ -168,6 +169,7 @@ void main()
 		}
 	}
 
+	//Создание вспомогательных матриц
 	int** add_matr1 = memory(size / 2, size / 2);
 	int** add_matr2 = memory(size / 2, size / 2);
 	int** add_matr3 = memory(size / 2, size / 2);
@@ -185,7 +187,6 @@ void main()
 	}
 	
 	int** RES = memory(size, size);
-
 	for (int i = 0; i < size / 2; i++)
 	{
 		for (int j = 0; j < size / 2; j++)
@@ -197,6 +198,7 @@ void main()
 		}
 	}
 
+	//Выравнивание границ результирующей матрицы
 	int x = 0, align_row = 100, align_column = 100;
 	for (int i = 0; i < size; i++)
 	{
@@ -215,14 +217,12 @@ void main()
 		if (x == 0 && i < align_column)
 			align_column = i;
 	}
-	
 	int** ALIGN_MATR = memory(align_row, align_column);
 	for (int i = 0; i < align_row; i++)
 	{
 		for (int j = 0; j < align_column; j++)
 			ALIGN_MATR[i][j] = RES[i][j];
 	}
-
 	cout << "\nРезультирующая матрица\n\n";
 	outputMatr(align_row, align_column, ALIGN_MATR);
 	system("pause");

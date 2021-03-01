@@ -40,7 +40,8 @@ void clearMemory(int n, int** matr)
 
 void main()
 {
-	setlocale(LC_ALL, "rus");
+	srand(time(NULL));
+	system("chcp 1251");
 	cout << "Вас приветствует программа" << endl <<
 		"быстрого перемножения матриц методом Штрассена\n\n";
 

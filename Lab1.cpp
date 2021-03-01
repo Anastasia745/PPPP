@@ -42,20 +42,20 @@ void main()
 {
 	srand(time(NULL));
 	system("chcp 1251");
-	cout << "Âàñ ïðèâåòñòâóåò ïðîãðàììà" << endl <<
-		"áûñòðîãî ïåðåìíîæåíèÿ ìàòðèö ìåòîäîì Øòðàññåíà\n\n";
+	cout << "Ð’Ð°Ñ Ð¿Ñ€Ð¸Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð°" << endl <<
+		"Ð±Ñ‹ÑÑ‚Ñ€Ð¾Ð³Ð¾ Ð¿ÐµÑ€ÐµÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ† Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð¼ Ð¨Ñ‚Ñ€Ð°ÑÑÐµÐ½Ð°\n\n";
 
 	int row_1, column_1;
 	do
 	{
-		cout << "Ââåäèòå ðàçìåðû ïåðâîé ìàòðèöû\n";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð¿ÐµÑ€Ð²Ð¾Ð¹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹\n";
 		cin >> row_1 >> column_1;
 	} while (row_1 <= 0 || column_1 <= 0);
 
 	int row_2, column_2;
 	do
 	{
-		cout << "Ââåäèòå ðàçìåðû âòîðîé ìàòðèöû\n";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹\n";
 		cin >> row_2 >> column_2;
 	} while (row_2 <= 0 || column_2 <= 0);
 
@@ -65,8 +65,8 @@ void main()
 	int choice;
 	do
 	{
-		cout << "Âûáåðèòå ñïîñîá çàïîëíåíèÿ ìàòðèö\n" << endl;
-		cout << "1 - Âðó÷íóþ \n2 - Ñëó÷àéíûì îáðàçîì\n";
+		cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ¿Ð¾ÑÐ¾Ð± Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†\n" << endl;
+		cout << "1 - Ð’Ñ€ÑƒÑ‡Ð½ÑƒÑŽ \n2 - Ð¡Ð»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¼ Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð¼\n";
 		cin >> choice;
 	} while (choice < 1 || choice > 2);
 	switch (choice)
@@ -74,17 +74,17 @@ void main()
 	case 1:
 		inputMatr(row_1, column_1, matrix1);
 		inputMatr(row_2, column_2, matrix2);
-		cout << "\nÌàòðèöà 1\n\n";
+		cout << "\nÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° 1\n\n";
 		outputMatr(row_1, column_1, matrix1);
-		cout << "\nÌàòðèöà 2\n\n";
+		cout << "\nÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° 2\n\n";
 		outputMatr(row_2, column_2, matrix2);
 		break;
 	case 2:
 		randMatr(row_1, column_1, matrix1);
 		randMatr(row_2, column_2, matrix2);
-		cout << "\nÌàòðèöà 1\n\n";
+		cout << "\nÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° 1\n\n";
 		outputMatr(row_1, column_1, matrix1);
-		cout << "\nÌàòðèöà 2\n\n";
+		cout << "\nÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° 2\n\n";
 		outputMatr(row_2, column_2, matrix2);
 		break;
 	}
@@ -112,10 +112,10 @@ void main()
 		for (int j = 0; j < column_2; j++)
 			M2[i][j] = matrix2[i][j];
 	}
-	cout << "Ïðèâåäåííûå ìàòðèöû\n";
-	cout << "\nÌàòðèöà 1\n\n";
+	cout << "ÐŸÑ€Ð¸Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹\n";
+	cout << "\nÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° 1\n\n";
 	outputMatr(size, size, M1);
-	cout << "\nÌàòðèöà 2\n\n";
+	cout << "\nÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° 2\n\n";
 	outputMatr(size, size, M2);
 
 	int** mat1 = memory(size / 2, size / 2);
@@ -224,7 +224,7 @@ void main()
 			ALIGN_MATR[i][j] = RES[i][j];
 	}
 
-	cout << "\nÐåçóëüòèðóþùàÿ ìàòðèöà\n\n";
+	cout << "\nÐ ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð¸Ñ€ÑƒÑŽÑ‰Ð°Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð°\n\n";
 	outputMatr(align_row, align_column, ALIGN_MATR);
 	system("pause");
 

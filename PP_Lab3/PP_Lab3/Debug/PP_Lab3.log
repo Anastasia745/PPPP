@@ -1,0 +1,31 @@
+﻿  Order.cpp
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(7,28): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(4,1): error C2084: функция "Transport::Transport(std::tuple<int,int,double>,int)" уже имеет текст реализации
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(3): message : см. предыдущее определение "{ctor}"
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(7,28): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(12,1): error C2084: функция "Train::Train(void)" уже имеет текст реализации
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(11): message : см. предыдущее определение "{ctor}"
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(22,1): error C2084: функция "double Transport::sumCost(int,int)" уже имеет текст реализации
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(21): message : см. предыдущее определение "sumCost"
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(27,1): error C2084: функция "double Transport::sumTime(int)" уже имеет текст реализации
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(26): message : см. предыдущее определение "sumTime"
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(32,1): error C2084: функция "int Transport::getDistance(void)" уже имеет текст реализации
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(31): message : см. предыдущее определение "getDistance"
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(37,1): error C2084: функция "Car::Car(void)" уже имеет текст реализации
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(36): message : см. предыдущее определение "{ctor}"
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(47,1): error C2084: функция "Plane::Plane(void)" уже имеет текст реализации
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(46): message : см. предыдущее определение "{ctor}"
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Factory.cpp(5,13): error C2264: Car::Car: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Factory.cpp(5,9): error C2064: результатом вычисления фрагмента не является функция, принимающая 0 аргументов
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Factory.cpp(15,15): error C2264: Plane::Plane: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Factory.cpp(15,9): error C2064: результатом вычисления фрагмента не является функция, принимающая 0 аргументов
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Factory.cpp(25,15): error C2264: Train::Train: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Factory.cpp(25,9): error C2064: результатом вычисления фрагмента не является функция, принимающая 0 аргументов
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Track.h(14,45): error C2535: Track::Track(Transport,Transport,Transport,int): функция-член уже определена или объявлена
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Track.h(13): message : см. объявление "Track::Track"
+  Track.cpp
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Track.h(14,45): error C2535: Track::Track(Transport,Transport,Transport,int): функция-член уже определена или объявлена
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Track.h(13): message : см. объявление "Track::Track"
+  Transport.cpp
+C:\Users\Анастасия\source\repos\PP_Lab3\PP_Lab3\Transport.cpp(7,28): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Создание кода...
